@@ -1,4 +1,5 @@
 # Script created to clean folder contents
+# Most of the references for this script were taken  from https://realpython.com/working-with-files-in-python/#getting-a-directory-listing
 
 #### THE ACTIONS PERFORMED BY THIS SCRIPT ARE IRREVERSIBLE.
 #### USE WITH CAUTION AND BE SURE TO ADD THE CORRECT FOLDERS TO THE folders.hk FILE
@@ -22,7 +23,7 @@ def collect_folders():
 # Fuction used to fix the path, so there is no need to worry if the path has / or \, as it will fix the string an ensure that path is in the correct format
 def fix_path(Folder):
     fixed_path = Folder.replace('\\', '/')
-    
+
     return fixed_path
 
 # This function will just read the folder size for informational pourposes
